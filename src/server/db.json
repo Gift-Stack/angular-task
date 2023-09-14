@@ -1,0 +1,10 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "completed": true,
+      "title": "Hello World",
+      "description": "Short description"
+    }
+  ]
+}

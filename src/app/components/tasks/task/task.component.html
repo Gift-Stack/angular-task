@@ -1,0 +1,21 @@
+<div class="bg-gray-300 px-3 py-2 rounded-lg overflow-y-hidden">
+  <div
+    class="flex justify-between items-center cursor-pointer"
+    (click)="toggle()"
+  >
+    <p class="font-bold" [class]="[task.completed && 'line-through']">
+      {{ task.title }}
+    </p>
+    <input
+      type="checkbox"
+      [checked]="task.completed"
+      (click)="toggleTaskStatus()"
+    />
+  </div>
+  <p
+    class="transition-all duration-500 pt-2 text-sm"
+    [class]="[expanded ? 'block' : 'hidden']"
+  >
+    {{ task.description }}
+  </p>
+</div>
